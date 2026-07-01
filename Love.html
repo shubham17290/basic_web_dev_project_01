@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Love | Developer API Reference</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <nav class="portal-nav">
+        <a href="index.html">Home</a>
+        <a href="package-summary.html">Package Summary</a>
+        <a href="allclasses.html">All Classes</a>
+        <a href="hum.html">hum</a>
+        <a href="constant-values.html">Constant Values</a>
+        <button type="button" class="theme-switcher">Theme</button>
+    </nav>
+
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <main class="doc-layout">
+        <header class="doc-header">
+            <div class="doc-header__badge-group">
+                <span class="doc-badge doc-badge--class">Class</span>
+                <span class="doc-badge doc-badge--interface">Runnable</span>
+                <span class="doc-badge" style="color: var(--slate-300); border-color: rgba(148, 163, 184, 0.3); background-color: rgba(148, 163, 184, 0.08);">Stable API</span>
+            </div>
+            <h1 class="doc-header__title">Love</h1>
+            <p class="hero-copy">A polished API reference for the <strong>Love</strong> class, including constructor and method behaviors, usage patterns, and quick copy-ready code examples.</p>
+            <div class="hero-actions">
+                <a href="hum.html">View hum class</a>
+                <a href="allclasses.html">Back to class directory</a>
+            </div>
+        </header>
+
+        <div class="detail-layout">
+            <section class="main-column">
+                <article class="overview-card">
+                    <div class="section-chip">Since Java 21</div>
+                    <h2 class="doc-section__title">Overview</h2>
+                    <p style="color: var(--slate-300);">The <strong>Love</strong> class implements <code>Runnable</code> for task execution. It is designed to run on a thread or as a standalone Java process through its <code>main()</code> entry point.</p>
+                    <div class="overview-grid">
+                        <div class="overview-stat">
+                            <strong>2</strong>
+                            <span>Public members</span>
+                        </div>
+                        <div class="overview-stat">
+                            <strong>1</strong>
+                            <span>Constructor</span>
+                        </div>
+                        <div class="overview-stat">
+                            <strong>2</strong>
+                            <span>Methods</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="doc-section" id="constructor-matrix">
+                    <h2 class="doc-section__title">Constructor Matrix</h2>
+                    <div class="code-card">
+                        <div class="section-actions">
+                            <span class="section-chip">Constructor</span>
+                            <button class="copy" onclick="copySnippet(this)"><span data-copied="Copied!">Copy</span></button>
+                        </div>
+                        <pre class="code-snippet">public Love()</pre>
+                    </div>
+                    <p style="color: var(--slate-300); margin-top: 1rem;">Creates a new Love instance ready to be executed by a thread or runtime caller.</p>
+                </article>
+
+                <article class="doc-section" id="method-catalog">
+                    <h2 class="doc-section__title">Method Catalog</h2>
+                    <table class="api-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 22%;">Modifier &amp; Type</th>
+                                <th style="width: 35%;">Signature</th>
+                                <th>Behavior</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="api-table__mono-cell">void</td>
+                                <td class="api-table__mono-cell">run()</td>
+                                <td class="api-table__desc-cell">Executes the class’ thread-based workflow logic.</td>
+                            </tr>
+                            <tr>
+                                <td class="api-table__mono-cell">static void</td>
+                                <td class="api-table__mono-cell">main(String[] args)</td>
+                                <td class="api-table__desc-cell">Bootstraps the class as a standalone Java application.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <article class="doc-section" id="usage-example">
+                    <h2 class="doc-section__title">Usage Example</h2>
+                    <div class="code-card">
+                        <div class="section-actions">
+                            <span class="section-chip">Sample</span>
+                            <button class="copy" onclick="copySnippet(this)"><span data-copied="Copied!">Copy</span></button>
+                        </div>
+                        <pre class="code-snippet">public class App {
+    public static void main(String[] args) {
+        Love love = new Love();
+        Thread thread = new Thread(love);
+        thread.start();
+    }
+}</pre>
+                    </div>
+                    <p style="color: var(--slate-300); margin-top: 1rem;">Run the class either inside a thread or as a standalone process to execute the workflow.</p>
+                </article>
+
+                <article class="doc-section" id="detailed-specs">
+                    <h2 class="doc-section__title">Detailed Specifications</h2>
+                    <div style="display: grid; gap: 1rem;">
+                        <div>
+                            <h3 style="font-size: 1rem; color: var(--slate-400); margin-bottom: 0.5rem;">Constructor</h3>
+                            <pre class="code-snippet">public Love()</pre>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1rem; color: var(--slate-400); margin-bottom: 0.5rem;">Methods</h3>
+                            <pre class="code-snippet">public void run()</pre>
+                            <pre class="code-snippet" style="margin-top: 0.75rem;">public static void main(String[] args)</pre>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <aside class="side-panel">
+                <div class="toc-card">
+                    <h2>Page contents</h2>
+                    <ul class="toc-list">
+                        <li><a href="#constructor-matrix">Constructor Matrix</a></li>
+                        <li><a href="#method-catalog">Method Catalog</a></li>
+                        <li><a href="#usage-example">Usage Example</a></li>
+                        <li><a href="#detailed-specs">Detailed Specifications</a></li>
+                    </ul>
+                </div>
+
+                <div class="toc-card">
+                    <h2>Quick links</h2>
+                    <p style="color: var(--slate-300); margin: 0 0 1rem;">Jump to related documentation and interface references.</p>
+                    <a class="link-pill" href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Runnable.html" target="_blank" rel="noopener">Runnable docs</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<footer class="site-footer">Built from the existing JavaDoc portal · Theme preference stored locally · Modern UI without breaking URLs.</footer>
+<script src="script.js" defer></script>
+</body>
+
+</html>

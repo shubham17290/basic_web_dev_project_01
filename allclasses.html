@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Directory | API Reference</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <nav class="portal-nav">
+        <a href="index.html">Home</a>
+        <a href="package-summary.html">Package Summary</a>
+        <a href="Love.html">Love</a>
+        <a href="hum.html">hum</a>
+        <a href="constant-values.html">Constant Values</a>
+        <button type="button" class="theme-switcher">Theme</button>
+    </nav>
+
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <main class="directory-page">
+        <section class="directory-hero">
+            <div>
+                <span class="meta-pill">API Reference</span>
+                <h1>Class Directory</h1>
+                <p class="directory-copy">Explore documented classes, view class-level details, and navigate to API pages with a polished, modern developer portal.</p>
+            </div>
+            <div class="directory-metrics">
+                <div class="metric-card">
+                    <span class="metric-value">2</span>
+                    <span class="metric-label">Classes documented</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">100%</span>
+                    <span class="metric-label">Static site ready</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="directory-toolbar">
+            <label class="search-field" for="classSearch">
+                <span>Search classes</span>
+                <input id="classSearch" type="search" placeholder="Filter by class name..." aria-label="Search classes" />
+            </label>
+            <div class="search-meta" id="resultCount">2 results</div>
+        </section>
+
+        <section class="directory-grid" id="classGrid">
+            <article class="directory-card" data-name="Love">
+                <div class="directory-card__content">
+                    <h2>Love</h2>
+                    <p>Implements <code>Runnable</code> and provides the primary entrypoint for the documentation set.</p>
+                </div>
+                <div class="directory-card__action">
+                    <span class="badge">Class</span>
+                    <a href="Love.html">View</a>
+                </div>
+            </article>
+
+            <article class="directory-card" data-name="hum">
+                <div class="directory-card__content">
+                    <h2>hum</h2>
+                    <p>Contains runtime helpers and the main execution entrypoint for the Java source.</p>
+                </div>
+                <div class="directory-card__action">
+                    <span class="badge">Class</span>
+                    <a href="hum.html">View</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<footer class="site-footer">Built from the existing JavaDoc portal · Theme preference stored locally · Modern UI without breaking URLs.</footer>
+<script src="script.js" defer></script>
+</body>
+
+</html>

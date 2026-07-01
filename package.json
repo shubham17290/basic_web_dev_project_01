@@ -1,0 +1,13 @@
+{
+  "name": "my-javadoc-portal-backend",
+  "version": "1.0.0",
+  "description": "Static documentation portal backend for my-javadoc-portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4"
+  }
+}
