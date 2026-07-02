@@ -22,19 +22,21 @@
 
 <body class="index-redirect-page">
 
-    <div class="redirect-nav">
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <nav class="redirect-nav" role="navigation" aria-label="Page navigation">
         <a href="package-summary.html">Package Summary</a>
         <a href="allclasses.html">All Classes</a>
         <a href="Love.html">Love Class</a>
         <a href="hum.html">hum Class</a>
         <a href="constant-values.html">Constant Values</a>
-        <button type="button" class="theme-switcher">Theme</button>
-    </div>
+        <button type="button" class="theme-switcher" aria-label="Toggle theme">Theme</button>
+    </nav>
 
     <div class="scroll-progress" aria-hidden="true"></div>
 
     <!-- Semantic Layout without redundant ARIA roles -->
-    <main class="redirect-gateway">
+    <main id="main-content" class="redirect-gateway">
 
         <!-- Premium UI Loading Indicator -->
         <div class="redirect-gateway__spinner" aria-hidden="true"></div>

@@ -10,22 +10,25 @@
 
 <body>
 
-    <nav class="portal-nav">
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <nav class="portal-nav" role="navigation" aria-label="Page navigation">
         <a href="index.html">Home</a>
         <a href="package-summary.html">Package Summary</a>
         <a href="allclasses.html">All Classes</a>
+        <a href="Love.html" aria-current="page">Love</a>
         <a href="hum.html">hum</a>
         <a href="constant-values.html">Constant Values</a>
-        <button type="button" class="theme-switcher">Theme</button>
+        <button type="button" class="theme-switcher" aria-label="Toggle theme">Theme</button>
     </nav>
 
     <div class="scroll-progress" aria-hidden="true"></div>
-    <main class="doc-layout">
+    <main id="main-content" class="doc-layout">
         <header class="doc-header">
             <div class="doc-header__badge-group">
                 <span class="doc-badge doc-badge--class">Class</span>
                 <span class="doc-badge doc-badge--interface">Runnable</span>
-                <span class="doc-badge" style="color: var(--slate-300); border-color: rgba(148, 163, 184, 0.3); background-color: rgba(148, 163, 184, 0.08);">Stable API</span>
+                <span class="doc-badge doc-badge--stable">Stable API</span>
             </div>
             <h1 class="doc-header__title">Love</h1>
             <p class="hero-copy">A polished API reference for the <strong>Love</strong> class, including constructor and method behaviors, usage patterns, and quick copy-ready code examples.</p>
@@ -40,7 +43,7 @@
                 <article class="overview-card">
                     <div class="section-chip">Since Java 21</div>
                     <h2 class="doc-section__title">Overview</h2>
-                    <p style="color: var(--slate-300);">The <strong>Love</strong> class implements <code>Runnable</code> for task execution. It is designed to run on a thread or as a standalone Java process through its <code>main()</code> entry point.</p>
+                    <p class="overview-desc">The <strong>Love</strong> class implements <code>Runnable</code> for task execution. It is designed to run on a thread or as a standalone Java process through its <code>main()</code> entry point.</p>
                     <div class="overview-grid">
                         <div class="overview-stat">
                             <strong>2</strong>
@@ -66,7 +69,7 @@
                         </div>
                         <pre class="code-snippet">public Love()</pre>
                     </div>
-                    <p style="color: var(--slate-300); margin-top: 1rem;">Creates a new Love instance ready to be executed by a thread or runtime caller.</p>
+                    <p class="section-desc">Creates a new Love instance ready to be executed by a thread or runtime caller.</p>
                 </article>
 
                 <article class="doc-section" id="method-catalog">
@@ -74,8 +77,64 @@
                     <table class="api-table">
                         <thead>
                             <tr>
-                                <th style="width: 22%;">Modifier &amp; Type</th>
-                                <th style="width: 35%;">Signature</th>
+                                <th class="col-modifier-type">Modifier &amp; Type</th>
+                                <th class="col-signature">Signature</th>
+                                <th>Behavior</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="api-table__mono-cell">void</td>
+                                <td class="api-table__mono-cell">run()</td>
+                                <td class="api-table__desc-cell">Executes the class' thread-based workflow logic.</td>
+                            </tr>
+                            <tr>
+                                <td class="api-table__mono-cell">static void</td>
+                                <td class="api-table__mono-cell">main(String[] args)</td>
+                                <td class="api-table__desc-cell">Bootstraps the class as a standalone Java application.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <article class="doc-section" id="usage-example">
+                    <h2 class="doc-section__title">Usage Example</h2>
+                    <div class="code-card">
+                        <div class="section-actions">
+                            <span class="section-chip">Sample</span>
+                            <button class="copy" onclick="copySnippet(this)"><span data-copied="Copied!">Copy</span></button>
+                        </div>
+                        <pre class="code-snippet">public class App {
+    public static void main(String[] args) {
+        Love love = new Love();
+        Thread thread = new Thread(love);
+        thread.start();
+    }
+}</pre>
+                    </div>
+                    <p class="section-desc">Run the class either inside a thread or as a standalone process to execute the workflow.</p>
+                </article>
+
+                <article class="doc-section" id="detailed-specs">
+                    <h2 class="doc-section__title">Detailed Specifications</h2>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <h3 class="spec-item__title">Constructor</h3>
+                            <pre class="code-snippet">public Love()</pre>
+                        </div>
+                        <div class="spec-item">
+                            <h3 class="spec-item__title">Methods</h3>
+                            <pre class="code-snippet">public void run()</pre>
+                            <pre class="code-snippet" style="margin-top: 0.75rem;">public static void main(String[] args)</pre>
+                        </div>
+                    </div>
+                </article>
+                    <h2 class="doc-section__title">Method Catalog</h2>
+                    <table class="api-table">
+                        <thead>
+                            <tr>
+                                <th class="col-modifier-type">Modifier &amp; Type</th>
+                                <th class="col-signature">Signature</th>
                                 <th>Behavior</th>
                             </tr>
                         </thead>

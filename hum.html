@@ -10,18 +10,21 @@
 
 <body>
 
-    <nav class="portal-nav">
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <nav class="portal-nav" role="navigation" aria-label="Page navigation">
         <a href="index.html">Home</a>
         <a href="package-summary.html">Package Summary</a>
         <a href="allclasses.html">All Classes</a>
         <a href="Love.html">Love Class</a>
+        <a href="hum.html" aria-current="page">hum</a>
         <a href="constant-values.html">Constant Values</a>
-        <button type="button" class="theme-switcher">Theme</button>
+        <button type="button" class="theme-switcher" aria-label="Toggle theme">Theme</button>
     </nav>
 
     <div class="scroll-progress" aria-hidden="true"></div>
 
-    <main class="api-docs">
+    <main id="main-content" class="api-docs">
 
         <!-- Noscript fallbacks -->
         <noscript>
@@ -59,15 +62,14 @@
             <table class="summary-table">
                 <thead>
                     <tr>
-                        <th style="width: 30%;">Constructor</th>
+                        <th class="col-constructor">Constructor</th>
                         <th>Description</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><code>hum()</code></td>
-                        <td style="color: var(--slate-400); font-style: italic;">Initializes a default instance of the
-                            hum class.</td>
+                        <td class="table-desc">Initializes a default instance of the hum class.</td>
                     </tr>
                 </tbody>
             </table>
@@ -79,7 +81,7 @@
             <table class="summary-table">
                 <thead>
                     <tr>
-                        <th style="width: 30%;">Modifier and Type</th>
+                        <th class="col-modifier">Modifier and Type</th>
                         <th>Method</th>
                         <th>Description</th>
                     </tr>
@@ -87,10 +89,9 @@
                 <tbody>
                     <tr>
                         <td><code>static void</code></td>
-                        <td><code><a href="#main" style="color: var(--emerald-400); text-decoration: none; font-weight: 500;">main</a>(java.lang.String[] ar)</code>
+                        <td><code><a href="#main" class="method-link">main</a>(java.lang.String[] ar)</code>
                         </td>
-                        <td style="color: var(--slate-400); font-style: italic;">Main execution entry point. Throws
-                            java.io.IOException.</td>
+                        <td class="table-desc">Main execution entry point. Throws java.io.IOException.</td>
                     </tr>
                 </tbody>
             </table>

@@ -69,9 +69,9 @@
   --bg-main: #fbf3de;
   --bg-surface: #fff8e7;
   --bg-surface-muted: #f3e8d5;
-  --text-main: #111827;
-  --text-muted: #475569;
-  --text-dark: #111827;
+  --text-main: #1a1a1a;
+  --text-muted: #374151;
+  --text-dark: #1a1a1a;
   --brand-primary: #6d28d9;
   --brand-primary-hover: #5b21b6;
   --brand-accent: #d97706;
@@ -86,6 +86,31 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Skip to content link for accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--brand-primary);
+  color: var(--text-dark);
+  padding: 8px 16px;
+  z-index: 10000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 4px 0;
+  transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Focus visible styles for keyboard navigation */
+:focus-visible {
+  outline: 3px solid var(--brand-primary);
+  outline-offset: 2px;
 }
 
 .scroll-progress {
@@ -745,6 +770,12 @@ button.copy span {
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.doc-badge--stable {
+  color: var(--text-muted);
+  border-color: rgba(148, 163, 184, 0.3);
+  background-color: rgba(148, 163, 184, 0.08);
+}
+
 .doc-header__title {
   font-size: clamp(2.25rem, 3vw, 3rem);
   font-weight: 800;
@@ -916,6 +947,21 @@ button.copy span {
   color: var(--text-muted);
 }
 
+.table-desc {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.method-link {
+  color: var(--brand-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.method-link:hover {
+  text-decoration: underline;
+}
+
 .link-pill {
   display: inline-flex;
   align-items: center;
@@ -992,6 +1038,14 @@ button.copy span {
   text-align: left;
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--border-color);
+}
+
+.col-constructor {
+  width: 30%;
+}
+
+.col-modifier {
+  width: 30%;
 }
 
 .summary-table th {

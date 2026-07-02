@@ -10,18 +10,21 @@
 
 <body>
 
-    <nav class="portal-nav">
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <nav class="portal-nav" role="navigation" aria-label="Page navigation">
         <a href="index.html">Home</a>
         <a href="package-summary.html">Package Summary</a>
+        <a href="allclasses.html" aria-current="page">All Classes</a>
         <a href="Love.html">Love</a>
         <a href="hum.html">hum</a>
         <a href="constant-values.html">Constant Values</a>
-        <button type="button" class="theme-switcher">Theme</button>
+        <button type="button" class="theme-switcher" aria-label="Toggle theme">Theme</button>
     </nav>
 
     <div class="scroll-progress" aria-hidden="true"></div>
 
-    <main class="directory-page">
+    <main id="main-content" class="directory-page">
         <section class="directory-hero">
             <div>
                 <span class="meta-pill">API Reference</span>
