@@ -65,12 +65,13 @@ app.get('/api/status', (req, res) => {
   res.json({
     status: 'ok',
     service: 'my-javadoc-portal-backend',
-    pages: ['index.html', 'package-summary.html', 'allclasses.html', 'Love.html', 'hum.html', 'constant-values.html']
+    pages: ['index.html', 'package-summary.html', 'allclasses.html', 'Love.html', 'hum.html', 'constant-values.html', 'Practical.html']
   });
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(publicDir, 'index.html'));
+// 404 handler for undefined routes
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not found' });
 });
 
 app.listen(port, () => {
