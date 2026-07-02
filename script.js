@@ -34,19 +34,30 @@
     return "Dark Mode";
   };
 
+  const getThemeIcon = (theme) => {
+    if (theme === "dark") return "☀️";
+    if (theme === "light") return "📖";
+    return "🌙";
+  };
+
   const initThemeSwitcher = () => {
     const switcher = document.querySelector("button.theme-switcher");
     if (!switcher) return;
 
+    const updateThemeButton = (theme) => {
+      switcher.innerHTML = `${getThemeIcon(theme)} <span>${getNextThemeLabel(theme)}</span>`;
+      switcher.setAttribute('title', `Current theme: ${theme.charAt(0).toUpperCase() + theme.slice(1)} Mode`);
+    };
+
     applyTheme(getStoredTheme());
-    switcher.textContent = getNextThemeLabel(getStoredTheme());
+    updateThemeButton(getStoredTheme());
 
     switcher.addEventListener("click", () => {
       const current = getStoredTheme();
       const next =
         current === "dark" ? "light" : current === "light" ? "reading" : "dark";
       applyTheme(next);
-      switcher.textContent = getNextThemeLabel(next);
+      updateThemeButton(next);
     });
   };
 

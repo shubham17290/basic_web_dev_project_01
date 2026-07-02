@@ -88,6 +88,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Smooth theme transitions */
+:root {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root * {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
 /* Skip to content link for accessibility */
 .skip-to-content {
   position: absolute;
@@ -132,7 +141,14 @@ button.theme-switcher {
   color: var(--text-main);
   font-weight: 700;
   cursor: pointer;
-  transition: background-color var(--transition-smooth), transform var(--transition-smooth), border-color var(--transition-smooth);
+  transition: background-color var(--transition-smooth), transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button.theme-switcher span {
+  font-size: 0.9rem;
 }
 
 button.theme-switcher:hover,
@@ -140,6 +156,7 @@ button.theme-switcher:focus-visible {
   background-color: rgba(56, 189, 248, 0.12);
   border-color: var(--brand-primary-hover);
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
 }
 
 .back-to-top {
